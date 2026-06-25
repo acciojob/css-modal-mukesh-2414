@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+.modal {
+  display: none; /* Hidden initially */
+  position: fixed;
+  z-index: 1; /* On top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* 15% from top, centered horizontally */
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%; /* Width of modal */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close button */
+.close-modal {
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close-modal:hover {
+  color: red;
+}
+
+/* Modal body */
+.modal-body {
+  margin-top: 10px;
+}
